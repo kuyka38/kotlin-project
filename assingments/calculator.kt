@@ -5,23 +5,23 @@ fun main() {
     val read = Scanner(System.`in`)
 
     println("Enter the first number:")
-    var num1 = read.nextDouble()
+    val num1 = read.nextDouble()
 
 
 
     println("Enter an operator (+, -, *, /):")
-    var operator = read.next()
+    val operator = read.next()
 
 
     println("Enter the second number:")
-    var num2 = read.nextDouble()
+    val num2 = read.nextDouble()
 
 
 
-    var result = when (operator) {
+    val result = when (operator) {
         "+" -> num1 + num2
-        "*" -> num1 * num2
         "-" -> num1 - num2
+        "*" -> num1 * num2
         "/" -> {
             if (num2 != 0.0) num1 / num2
             else {
